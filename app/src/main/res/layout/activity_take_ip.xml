@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".takeIP"
+    android:background="@color/bgblack"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130sp"
+        android:background="@drawable/roundedcornerhai"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30sp"
+
+        >
+        <LinearLayout
+            android:layout_width="150sp"
+            android:layout_height="100sp"
+            android:layout_marginTop="14sp">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="145dp"
+                android:layout_height="105dp"
+                android:layout_marginLeft="20sp"
+                android:layout_weight="1"
+                android:indeterminate="false"
+                android:progressDrawable="@layout/circular" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="58sp"
+            android:layout_marginLeft="74sp"
+            >
+            <TextView
+                android:id="@+id/progressShow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="50%"
+                android:textColor="@color/primaryWhite"
+                android:textSize="13sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140sp"
+            android:layout_marginTop="25sp">
+            <TextView
+                android:id="@+id/store"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Internal Storage"
+                android:textColor="@color/primaryGreen"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="220sp"
+            android:layout_marginTop="70sp">
+            <TextView
+                android:id="@+id/dekh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="yaha aayega"
+                android:textColor="@color/primaryWhite"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140sp"
+            android:layout_marginTop="70sp">
+            <TextView
+                android:id="@+id/dikha"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="yaha aayega"
+                android:textColor="@color/primaryWhite"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="203sp"
+            android:layout_marginTop="70sp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="of"
+                android:textColor="@color/primaryWhite"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="350sp"
+        android:background="@drawable/roundedcorner2"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="30sp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:text="History"
+               android:textSize="25sp"
+               android:textAlignment="center"
+               android:textStyle="bold"
+               android:textColor="@color/PrimaryDark"
+               />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="348dp"
+            android:layout_height="299dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="41dp"
+            android:layout_marginEnd="13dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="30sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="10sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40sp"
+            android:layout_marginBottom="10sp"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/selectFile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15sp"
+                android:background="@drawable/buttonstyle"
+                android:text="SELECT FILE"
+                android:onClick="filechoose"
+                android:textColor="@color/primaryGreen" />
+
+            <Button
+                android:id="@+id/sendFile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonstyle"
+                android:text="SEND"
+                android:textColor="@color/primaryGreen" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50sp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="PORT:6125"
+                android:textColor="@color/primaryWhite"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
